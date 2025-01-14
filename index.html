@@ -3,53 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Temperature Converter</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="header">
-        <h1>Hi, I'm Rohit</h1>
-        <p>Aspiring Web Developer</p>
-    </header>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <img src="Image/20241005_085831.jpg" alt="My Photo" class="profile-img">
-        <p>Hello! I’m Rohit, a passionate web developer eager to build creative and user-friendly websites. I enjoy learning new skills and exploring exciting projects.</p>
-    </section>
-
-    <section id="skills">
-        <h2>My Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Responsive Design</li>
-        </ul>
-    </section>
-
-    <section id="portfolio">
-        <h2>My Work</h2>
-        <div class="project">
-            <h3>Landing Page</h3>
-            <p>A simple and clean landing page.</p>
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        <div class="input-section">
+            <label for="temperature">Enter Temperature:</label>
+            <input type="number" id="temperature" placeholder="Enter value">
         </div>
-        <div class="project">
-            <h3>Portfolio Website</h3>
-            <p>This is the portfolio you’re viewing now!</p>
+        <div class="unit-section">
+            <label for="unit">Select Unit:</label>
+            <select id="unit">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
         </div>
-    </section>
+        <button id="convert-btn">Convert</button>
+        <div class="result">
+            <h2>Converted Temperature:</h2>
+            <p id="output">--</p>
+        </div>
+    </div>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: rohitvaidya4477@gmail.com</p>
-        <p>Phone: +91 9309043604</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/rohit-vaidya-56ab72231" target="_blank">linkedin.com/in/rohit</a></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Designed by Rohit</p>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
