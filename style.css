@@ -1,58 +1,72 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    box-sizing: border-box;
+    line-height: 1.6;
 }
-.container {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 300px;
+
+#hero {
+    background: linear-gradient(to right, #ff7f50, #ff4500);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+.btn {
+    background-color: white;
+    color: #ff4500;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.btn:hover {
+    background-color: #ff7f50;
+    color: white;
+}
+
+section {
+    padding: 50px;
     text-align: center;
 }
-.input-section, .unit-section {
-    margin: 15px 0;
+#about {
+    background-color: #f4f4f4;
 }
-
-label {
-    font-size: 14px;
-    margin-bottom: 5px;
-    display: block;
+#features {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ddd;
+    padding: 50px;
 }
-
-input, select {
-    width: 100%;
+.feature {
+    text-align: center;
     padding: 10px;
-    font-size: 16px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    width: 30%;
 }
-button {
-    background-color: #007bff;
+#contact {
+    background-color: #bbb;
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #333;
     color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
+    text-align: center;
+    padding: 10px 0;
 }
 
-button:hover {
-    background-color: #0056b3;
-}
-.result {
-    margin-top: 20px;
-}
-
-#output {
-    font-size: 18px;
-    font-weight: bold;
+@media (max-width: 768px) {
+    #features {
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature {
+        width: 100%;
+    }
 }
